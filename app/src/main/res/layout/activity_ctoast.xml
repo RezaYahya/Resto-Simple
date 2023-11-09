@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/act_ctoast"
+    android:background="@drawable/corner"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_rabbit1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_action_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You Everyone"
+        android:textColor="#E6AE6A"
+        android:fontFamily="@font/msedang"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_rabbit1"
+        app:layout_constraintStart_toEndOf="@+id/iv_rabbit1"
+        app:layout_constraintTop_toTopOf="@+id/iv_rabbit1" />
+
+    <ImageView
+        android:id="@+id/iv_rabbit2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_action_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_say"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

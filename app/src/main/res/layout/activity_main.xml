@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Menu"
+        android:textColor="#E6AE6A"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:fontFamily="@font/mbold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_food">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/msedang"
+            android:shadowColor="#FFFFFF"
+            android:text="Pizza"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/msedang"
+            android:text="Burger"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/msedang"
+            android:text="Kebab"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mbold"
+        android:text="Drink Menu"
+        android:textColor="#E6AE6A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_food" />
+
+    <CheckBox
+        android:id="@+id/cb_ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matcha Latte"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:fontFamily="@font/msedang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_drink" />
+
+    <CheckBox
+        android:id="@+id/cb_sm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strawberry Milkshake"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:fontFamily="@font/msedang"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_ml" />
+
+    <CheckBox
+        android:id="@+id/cb_itl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ice Taro Latte"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:fontFamily="@font/msedang"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_sm" />
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:text="Order Now"
+        android:textSize="20sp"
+        android:fontFamily="@font/msedang"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#04A59A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_itl" />
+
+    <TextView
+        android:id="@+id/tv_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="@font/msedang"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_order" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
